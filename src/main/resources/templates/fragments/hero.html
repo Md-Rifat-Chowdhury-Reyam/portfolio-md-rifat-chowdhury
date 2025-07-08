@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<th:block th:fragment="hero-section">
+    <section class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-greeting">Hello, I am</div>
+                <h1 class="hero-title"><span class="gradient-text">Muhammad Rifat Chowdhury</span></h1>
+                <h2 class="hero-subtitle">Full Stack Developer | Java, Spring Boot, React.js</h2>
+                <p class="hero-description">
+                    Passionate about creating innovative web solutions that bridge software engineering
+                    with user experience. Specializing in full-stack development with modern technologies.
+                </p>
+                <div class="hero-button">
+                    <a href="#projects" class="btn btn-primary">
+                        View Projects <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn" style="margin-left: 15px; background: transparent; border: 1px solid var(--primary-color);">
+                        Contact Me
+                    </a>
+                </div>
+                <a href="mailto:rifat@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+    </section>
+</th:block>
+</html>
