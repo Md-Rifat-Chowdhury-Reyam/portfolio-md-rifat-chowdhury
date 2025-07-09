@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<th:block th:fragment="about-section">
+    <section class="about" id="about">
+        <div class="container about-container">
+            <div class="section-header">
+                <h1 class="section-title">About Me</h1>
+                <p class="section-subtitle">Get to know more about my background, skills, and what drives me</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="about-subheader">My Background</h2>
+                    <h3 class="about-title">Developer by Profession, Teacher by Passion.</h3>
+                    <div class="about-description">
+                        <p>
+                            I'm Muhammad Rifat Chowdhury — a passionate software developer who loves solving complex real-world
+                            problems through clean, efficient code. With hands-on experience in building full-stack applications
+                            using technologies like Java, Spring Boot, React, and MySQL, I've dedicated my career to creating
+                            impactful digital solutions that are both scalable and user-friendly.
+                        </p>
+                        <p>
+                            Beyond development, I find joy in sharing knowledge through mentoring and teaching. I believe the best
+                            solutions come from combining technical expertise with creative problem-solving and clear communication.
+                        </p>
+                    </div>
+
+                    <div class="about-skills">
+                        <h4 class="skills-title">My Technical Skills:</h4>
+                        <div class="skills-grid">
+                            <div class="skill-column">
+                                <div class="skill-item">Java</div>
+                                <div class="skill-item">Spring Boot</div>
+                                <div class="skill-item">JavaScript</div>
+                                <div class="skill-item">React</div>
+                            </div>
+                            <div class="skill-column">
+                                <div class="skill-item">SQL</div>
+                                <div class="skill-item">MySQL</div>
+                                <div class="skill-item">AWS</div>
+                                <div class="skill-item">Git</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-image">
+                    <img src="/image/img.jpg" alt="Muhammad Rifat Chowdhury" class="profile-img">
+                </div>
+            </div>
+        </div>
+
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+    </section>
+</th:block>
+</html>

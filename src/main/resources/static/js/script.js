@@ -1,5 +1,7 @@
+
+
 // Smooth scrolling for all links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+document.querySelectorAll('.social-link').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
         const targetId = this.getAttribute('href');
@@ -34,4 +36,13 @@ window.addEventListener('load', () => {
             loader.style.display = 'none';
         }, 500);
     }, 1000);
+});
+
+
+// scroll down after hero section
+document.querySelector('.scroll-down').addEventListener('click', () => {
+    window.scrollTo({
+        top: window.innerHeight,
+        behavior: 'smooth'
+    });
 });
