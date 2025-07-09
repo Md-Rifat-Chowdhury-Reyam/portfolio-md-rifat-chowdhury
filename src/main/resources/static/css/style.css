@@ -1290,24 +1290,45 @@ a{
     margin-bottom: 3rem;
 }
 
-.footer-brand{
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--light-color);
-    margin-bottom: 1rem;
+.footer-brand {
+    display: inline-block; /* Makes container fit logo width */
+    position: relative; /* Needed for absolute positioning of underline */
 }
 
-.footer-brand {
+
+/* Keep your existing logo styles */
+.footer-logo{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--light-color);
+    position:relative;
+}
+
+.footer-logo span{
     background: linear-gradient(to right, var(--primary-color), var(--accent-color));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+
+}
+
+/*under line*/
+.footer-logo::after
+{
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    background: linear-gradient(to right, var(--primary-color), var(--accent-color));
+    bottom: -5px;
+    left: 0;
 }
 
 .footer-tagline {
     color: var(--text-light);
     line-height: 1.6;
     max-width: 300px;
+    padding-top: 10px;
 }
 
 .footer-links {
