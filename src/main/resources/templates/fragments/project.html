@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<th:block th:fragment="projects-section">
+    <section class="projects" id="projects">
+        <div class="container projects-container">
+            <div class="section-header">
+                <h1 class="section-title">My Projects</h1>
+                <p class="section-subtitle">Explore some of my recent videos, courses on YouTube and Github</p>
+            </div>
+
+            <div class="technologies-used">
+                <h3 class="tech-title">Technologies I Teach:</h3>
+                <div class="tech-tags">
+                    <span class="tech-tag">Spring Boot</span>
+                    <span class="tech-tag">Spring Security</span>
+                    <span class="tech-tag">Data JPA</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">AWS</span>
+                    <span class="tech-tag">Docker</span>
+                    <span class="tech-tag">Postman</span>
+                </div>
+            </div>
+
+            <div class="course-cards">
+                <div class="course-card">
+                    <h3 class="course-title">Build REST APIs with Spring and Spring Boot</h3>
+                    <p class="course-description">
+                        In this course, you will learn how to create production grade REST API that connects to the MySQL database through JPA/Hibernate
+                    </p>
+                    <div class="course-actions">
+                        <a href="#" class="btn btn-outline">View Code</a>
+                        <a href="#" class="btn btn-primary">Join course →</a>
+                    </div>
+                </div>
+
+                <!-- Additional course cards can be added here -->
+                <div class="course-card">
+                    <h3 class="course-title">Spring Security Masterclass</h3>
+                    <p class="course-description">
+                        Learn to secure your Spring applications with industry-standard authentication and authorization techniques
+                    </p>
+                    <div class="course-actions">
+                        <a href="#" class="btn btn-outline">View Code</a>
+                        <a href="#" class="btn btn-primary">Join course →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</th:block>
+</html>

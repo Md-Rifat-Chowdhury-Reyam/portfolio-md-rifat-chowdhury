@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<th:block th:fragment="achievement-section">
+    <section class="achievement" id="achievement">
+        <div class="container achievement-container">
+            <div class="section-header">
+                <h1 class="section-title">Achievements</h1>
+                <p class="section-subtitle">Recognitions and milestones I've reached along my journey</p>
+            </div>
+
+            <div class="achievement-grid">
+                <!-- Achievement 1 -->
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <h3 class="achievement-number">Spring Boot</h3>
+                    <p class="achievement-description">
+                        Built a thriving learn-focused on Spring Boot with consistently creating high-quality small projects, and career guidance content for aspiring myself.
+                    </p>
+                </div>
+
+                <!-- Achievement 2 -->
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="achievement-number">HTML, CSS, Js</h3>
+                    <p class="achievement-description">
+                        Successfully learning tech careers, coding, and project development.
+                    </p>
+                </div>
+
+                <!-- Achievement 3 -->
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3 class="achievement-number">GitHub Contributions</h3>
+                    <p class="achievement-description">
+                        Actively contributed to open-source projects on GitHub, shared readable code libraries, and maintained personal repositories featuring full-stack applications.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+    </section>
+</th:block>
+</html>
