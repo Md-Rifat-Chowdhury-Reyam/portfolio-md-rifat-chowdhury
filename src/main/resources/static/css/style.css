@@ -619,7 +619,7 @@ a{
 .skills-title {
     font-size: 1.3rem;
     margin-bottom: 1.5rem;
-    color: var(--text-color);
+    color: var(--primary-color);
     position: relative;
     display: inline-block;
 }
@@ -648,6 +648,9 @@ a{
 }
 
 .skill-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
     padding: 0.8rem 1.2rem;
     background: rgba(255, 255, 255, 0.05);
     border-left: 3px solid var(--primary-color);
@@ -657,10 +660,31 @@ a{
     transition: all 0.3s ease;
 }
 
+.skill-item i {
+    font-size: 1.2rem;
+    width: 24px;
+    text-align: center;
+}
+
+/* Specific icon colors */
+.fa-java { color: #007396; }
+.fa-leaf { color: #6DB33F; }
+.fa-js-square { color: #F7DF1E; }
+.fa-react { color: #61DAFB; }
+.fa-database { color: #00758F; }
+.fa-aws { color: #FF9900; }
+.fa-git-alt { color: #F05032; }
+
+/* Hover effects */
 .skill-item:hover {
     background: rgba(99, 102, 241, 0.1);
     transform: translateX(5px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.skill-item:hover i {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
 
 /* Responsive Design */
